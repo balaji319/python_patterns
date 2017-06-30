@@ -1,0 +1,20 @@
+{% extends 'user/header.html' %}
+
+
+
+{% block a %}
+
+
+<h1 class="myactor">{{ movie.actor}}</h1>
+<h1 style="color: aqua;">{{ movie.actor_movie}}</h1>
+
+
+    {% for ss in movie.song_set.all %}
+
+          {{ss.song_name}}
+
+
+    {% endfor %}
+
+
+{% endblock %}
